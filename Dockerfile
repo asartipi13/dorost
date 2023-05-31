@@ -2,7 +2,7 @@ FROM tiangolo/uvicorn-gunicorn-fastapi:python3.8
 
 RUN apt-get update && apt-get install git
 
-RUN git clone https://huggingface.co/Dorost/resume
+# RUN git clone https://huggingface.co/Dorost/resume
 
 # Set working directory
 WORKDIR .

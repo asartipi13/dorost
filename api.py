@@ -34,7 +34,8 @@ ID2LABEL = {6: 'Data Science',
             23: 'Testing'}
 
 ## Dorost/resume
-pipe = pipeline("text-classification", model="./resume", device=-1)
+# pipe = pipeline("text-classification", model="./resume", device=-1)
+pipe = pipeline("text-classification", model="Dorost/resume", device=-1)
 
 @app.post("/resume/")
 def get_resume(file: UploadFile = File(...)):
